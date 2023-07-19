@@ -1,0 +1,7 @@
+input[name='auth[server]'],
+input[name='auth[username]'],
+input[name='auth[password]'],
+input[name='auth[db]']
+{
+    width: 500px;
+}
