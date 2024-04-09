@@ -1,0 +1,7 @@
+a, a:visited {
+    color: red;
+}
+
+h2, thead td, thead th {
+    background: lightcoral;
+}
