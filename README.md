@@ -4,7 +4,7 @@
 [![Docker Stars](https://badgen.net/docker/stars/assoconnect/adminer-azure?icon=docker&label=stars)](https://hub.docker.com/r/assoconnect/adminer-azure/)
 [![Docker Image Size](https://badgen.net/docker/size/assoconnect/adminer-azure?icon=docker&label=image%20size)](https://hub.docker.com/r/assoconnect/adminer-azure/)
 
-This image is based on the official [Adminer Docker image](This image based on the official Adminer image ships the required setup to connect with SSL to an Azure MySQL Single or Flexible Server).
+This image based on the official [Adminer Docker image](https://hub.docker.com/_/adminer) ships the required setup to connect with SSL to an Azure MySQL Single or Flexible Server.
 
 A daily build is available on the [Docker Hub](https://hub.docker.com/r/assoconnect/adminer-azure).
 
