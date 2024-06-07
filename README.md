@@ -27,3 +27,6 @@ Define the env variable `LOGIN_SERVERS` as JSON-encoded list of servers
 }
 ```
 _Note that the `server` driver is Adminer's internal name for MysQL._
+
+## Azure Portal SSH
+This images also ships with the [required configuration](https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?tabs=debian&pivots=container-linux#enable-ssh) to enable an SSH access through the Azure web portal.
