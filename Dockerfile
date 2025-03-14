@@ -1,4 +1,4 @@
-FROM adminer:latest
+FROM adminer:4.8.1
 
 COPY ./html /var/www/html/
 
@@ -25,5 +25,12 @@ RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 RUN rm /etc/nginx/sites-enabled/default
 COPY etc/nginx/adminer.conf /etc/nginx/conf.d/adminer.conf
 
-# Replace Admin default CMD by starting Nginx and Adminer with another port
-CMD service nginx start && php -S 127.0.0.1:8880 -t /var/www/html/
+# Expose ports used by Nginx and Adminer
+EXPOSE 80 8880
+
+# Use a script to start both Nginx and PHP-Adminer in parallel
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+# Start Nginx and Adminer
+CMD ["/start.sh"]
