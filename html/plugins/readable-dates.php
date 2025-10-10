@@ -44,6 +44,6 @@ EOT;
     }
 
     function head() {
-        echo script($this->prepend);
+        echo Adminer\script($this->prepend);
     }
 }
