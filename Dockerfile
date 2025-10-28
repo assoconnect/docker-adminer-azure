@@ -1,4 +1,4 @@
-FROM adminer:5.4.0
+FROM adminer:5
 
 COPY ./html /var/www/html/
 
