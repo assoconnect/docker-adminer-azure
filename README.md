@@ -6,13 +6,7 @@
 
 This image based on the official [Adminer Docker image](https://hub.docker.com/_/adminer) ships the required setup to connect with SSL to an Azure MySQL Single or Flexible Server.
 
-It uses Nginx as a proxy server to first check Basic Auth before forwarding to Adminer PHP built-in server.
-
 A daily build is available on the [Docker Hub](https://hub.docker.com/r/assoconnect/adminer-azure).
-
-## Basic authentification to protect from any public access
-
-Define the env variable `PROTECTED_ACCESS` with the given result of the htpasswd tool (i.e. `user:password`)
 
 ## Login SSL
 This image ships with the required setup to connect with SSL to an Azure MySQL Single or Flexible Server.) ships the required setup to connect with SSL to an Azure MySQL Single or Flexible Server
@@ -20,7 +14,7 @@ This image ships with the required setup to connect with SSL to an Azure MySQL S
 * https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-connect-tls-ssl
 
 ## Login Servers
-This images also leverage the `login-servers.php` plugin to provide a predefined list of servers.
+This image also leverages the `login-servers.php` plugin to provide a predefined list of servers.
 
 Define the env variable `LOGIN_SERVERS` as JSON-encoded list of servers
 ```
